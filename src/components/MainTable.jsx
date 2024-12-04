@@ -52,7 +52,7 @@ function MainTable({ data, columns }) {
                     setSortData={setSortData}
                     setCurrentCulomns={setCurrentCulomns}
                   />
-                  <Bodgit inity
+                  <Body
                     currentCulomns={currentCulomns}
                     sortData={sortData}
                     records={records}
