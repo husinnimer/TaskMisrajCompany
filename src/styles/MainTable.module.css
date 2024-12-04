@@ -1,0 +1,103 @@
+.container {
+  width: 1000px;
+  height: 500px;
+  overflow: auto;
+  margin: auto;
+}
+
+.dataGrid {
+  width: 100%;
+  background-color: #000000f2;
+  color: #ddd;
+  border-collapse: collapse;
+  font-family: "Noto Sans";
+  border-radius: 10px;
+}
+
+.dataGrid th,
+.dataGrid td {
+  border-bottom: 1px solid #ffffff61;
+  padding: 20px;
+}
+
+.dataGrid tr:nth-child(even) {
+  background-color: #dddddd29;
+  transition: 0.5s;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.heading div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading div span {
+  font-size: 13px;
+  color: white;
+}
+
+.heading input {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  width: 150px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.secondHead {
+  font-size: 15px;
+  margin: 2px;
+  color: white;
+}
+
+tr {
+  transition: 0.5s;
+}
+
+tr:hover,
+.dataGrid tr:nth-child(even):hover {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.76);
+}
+
+.listPagination {
+  width: fit-content;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 20px auto;
+  transform: translateX(-50%);
+}
+
+.listPagination li {
+  background-color: white;
+  color: black;
+  border: 1px solid black !important;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.listPagination li:hover {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  background-color: black !important;
+  color: white !important;
+}
